@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        #projects h2
+        {
+            background-color: blueviolet;
+            padding: 0.4em;
+            font-size: 1.6em;
+        }
+        .project-container
+        {
+            width: min(85%, 989px);
+            margin: 0 auto;
+            text-align: center;
+        }
+        .project-container h3
+        {
+            color: blue;
+        }
+        .project-content
+        {
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: black 0 0 30px;
+            padding: 10px;
+            margin-bottom: 2.5em;
+        }
+        .project-content img
+        {
+            max-width: 100%;
+            height: auto;
+        }
+        .project-content p
+        {
+            text-align: justify;
+            margin: 10px 0;
+            line-height: 1.34em;
+        }
+        @media(min-width: 769px)
+        {
+
+            .project-content img
+            {
+                height: 300px;
+            }
+            .project-content
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .project-content p
+            {
+                font-size: 1.1em;
+                width: 70%;
+            }
+        }
+     
+    </style>
+</head>
+<body>
+    
+    <!--------------------------------Projects--------------------------------------------->
+    <section id="projects">
+        <h2>Projects</h2>  
+        <div class="project-container">
+            <h3>Fingerprint Detection</h3>
+            <div class="project-content">
+                <p>Used biometric solution for authentication on computerized systems and to verify the 
+                    authenticity of one person by his fingerprint. The user provides his fingerprint together with
+                    his identity information like his ID number. The fingerprint verification system retrives the
+                    fingerprint template according to the ID number and matches the template with the real time 
+                    acquired fingerprint from the user which is done using Image Processing (Matlab).
+                </p>
+                <img src="images/fingerprint-flowchart.png" alt="fingerprint-flowchart">
+                <img src="images/fingerprint-detection.jpg" alt="fingerprint-image1">
+            </div>
+            <h3>Object detection and Tracking</h3>
+            <div class="project-content">
+                <p>Object detection and tracking is the techniques that can be used to identify moving parts in 
+                    a video. The process is frame differencing, colorspaces between two different videos, background 
+                    seperation, Haar cascade classifiers for face detection, eye detection, nose detection and finally 
+                    canny's edge detection is done using Image Processing OpenCV (Python).
+                </p>
+                <img src="images/object-tracking.jpg" alt="oject-detection-flowchart">
+                <img src="images/object-tracking1.jpg" alt="object-detection-image1">
+            </div>
+            <h3>License Plate Recognition using Python</h3>
+            <div class="project-content">
+                <p>The first step is to detect the license plate from the car. We will use the contour option in openCV 
+                    to detect for rectangular object to find the number plate for license plate recognition. Character 
+                    segmentation, once we have detected the license plate we have to crop it out and save it as a new 
+                    image. Character recognition, new image that we obtain in the previous step is sure to have some
+                    Characters written using Image Processing OpenCV (Python).
+                </p>
+                <img src="images/license-plate-flowchart.jpg" alt="license-plate-flowchart">
+                <img src="images/license-plate.jpg" alt="license-plate-image1">
+                <img src="images/license-plate1.jpg" alt="license-plate-image2">
+            </div>  
+        </div>
+    </section>  
+
+</body>
+</html>
